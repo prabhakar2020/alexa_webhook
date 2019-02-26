@@ -25,7 +25,7 @@ def homepage():
 @app.route("/alexa/<task_name>",methods=["GET"])
 def alexa(task_name):
     task = task_name
-    return task
+    return "Here is your query " +str(task)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
